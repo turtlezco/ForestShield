@@ -10,8 +10,13 @@ const app = express();
 app.use(express.json());
 
 // Rutas
-const usuarioRoutes = require('./routes/usuario'); // 👈 asegúrate que el nombre coincida
-app.use('/api/usuarios', usuarioRoutes); // 👈 con barra inicial
+const usuarioRoutes = require('./routes/usuario'); 
+const climaRoutes = require('./routes/clima');
+
+
+app.use('/api/usuarios', usuarioRoutes); 
+app.use('/api/clima', climaRoutes)
+
 
 // Conexión a MongoDB Atlas
 mongoose.connect(process.env.MONGO_URI)
