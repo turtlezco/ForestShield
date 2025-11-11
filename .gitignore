@@ -1,0 +1,5 @@
+# Ignorar archivos grandes de salida
+backend/outputs_forestshield/modelo_final.pkl
+backend/outputs_forestshield/scaler_final.pkl
+backend/outputs_forestshield/*.png
+backend/outputs_forestshield/metrics.json
