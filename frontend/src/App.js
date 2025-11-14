@@ -1,8 +1,7 @@
-import React from "react";
-import Prediccion from "./Prediccion";
+import ForestShieldForm from "./components/ForestShieldForm";
 
 function App() {
-  return <Prediccion />;
+  return <ForestShieldForm />;
 }
 
 export default App;
